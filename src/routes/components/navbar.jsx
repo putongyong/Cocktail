@@ -4,14 +4,14 @@ export default function Navbar() {
     return (
       <> 
             <div class="placeholder">
-                <div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
+                <div class="parallax-window">
                     <div class="tm-header">
                         <div class="row tm-header-inner">
                             <div class="col-md-6 col-12">
                                 <img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
                                 <div class="tm-site-text-box">
-                                    <h1 class="tm-site-title">Simple House</h1>
-                                    <h6 class="tm-site-description">new restaurant template</h6>	
+                                    <h1 class="tm-site-title">Cocktail Room</h1>
+                                    <h6 class="tm-site-description">a bar where we meet</h6>	
                                 </div>
                             </div>
                             
@@ -20,6 +20,16 @@ export default function Navbar() {
                                     <li className="tm-nav-li">
                                         <NavLink to="/" exact className="tm-nav-link" activeClassName="active">
                                             Home
+                                        </NavLink>
+                                    </li>
+                                    <li className="tm-nav-li">
+                                        <NavLink to="/products" className="tm-nav-link" activeClassName="active">
+                                            Products
+                                        </NavLink>
+                                    </li>
+                                    <li className="tm-nav-li">
+                                        <NavLink to="/workshop" className="tm-nav-link" activeClassName="active">
+                                            Workshop
                                         </NavLink>
                                     </li>
                                     <li className="tm-nav-li">
@@ -34,7 +44,6 @@ export default function Navbar() {
                                     </li>
                                 </ul>
                             </nav>
-
                         </div>
                     </div>
                 </div>

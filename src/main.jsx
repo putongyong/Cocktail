@@ -8,7 +8,8 @@ import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import About from "./routes/about";
 import Contact from "./routes/contact";
-
+import Products from "./routes/products";
+import Workshop from "./routes/workshop";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,14 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: <Contact />,
+  },
+  {
+    path: "products",
+    element: <Products />,
+  },
+  {
+    path: "workshop",
+    element: <Workshop />,
   },
 ]);
 

@@ -212,7 +212,10 @@ p, address {
 .placeholder {
   width: 100%;
   min-height: 460px;
-  background-color: #556E5B;
+  background-color: rgb(165, 147, 48);
+  background-image: url("../img/pexels-life-of-pix-3540.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
 }
 
 .placeholder-2 {
