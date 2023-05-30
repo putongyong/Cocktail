@@ -38,6 +38,11 @@ html {
   padding-left: 15px;
   padding-right: 15px;
 }
+.tm-container-inner-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 100px;
+}
 
 .row {
   display: -ms-flexbox;
