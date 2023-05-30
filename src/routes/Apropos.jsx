@@ -1,7 +1,7 @@
 import Footer from "./components/footer"
 import Navbar from "./components/navbar"
 
-export default function About() {
+export default function Apropos() {
     return (
       <>
       <div class="container">

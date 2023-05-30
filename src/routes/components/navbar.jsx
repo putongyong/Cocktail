@@ -22,18 +22,19 @@ export default function Navbar() {
                                             Home
                                         </NavLink>
                                     </li>
-                                    <li className="tm-nav-li">
-                                        <NavLink to="/products" className="tm-nav-link" activeClassName="active">
-                                            Products
-                                        </NavLink>
+                                    <li className="tm-nav-li tm-nav-dropdown-li">
+                                        <a className="tm-nav-link" activeClassName="active">Produits</a>
+                                        <div className="tm-nav-dropdown">
+                                            <NavLink to="/cocktails">Cocktails</NavLink>
+                                            <NavLink to="/aperitifs">Apéritifs</NavLink>
+                                            <NavLink to="/desserts">Desserts</NavLink>
+                                            <NavLink to="/glaces">Glaces et Smoothies</NavLink>
+                                            <NavLink to="/ambiances">Ambiance et idées</NavLink>
+                                            <NavLink to="/ateliers">Ateliers</NavLink>
+                                        </div>
                                     </li>
                                     <li className="tm-nav-li">
-                                        <NavLink to="/workshop" className="tm-nav-link" activeClassName="active">
-                                            Workshop
-                                        </NavLink>
-                                    </li>
-                                    <li className="tm-nav-li">
-                                        <NavLink to="/about" className="tm-nav-link" activeClassName="active">
+                                        <NavLink to="/apropos" className="tm-nav-link" activeClassName="active">
                                             About
                                         </NavLink>
                                     </li>

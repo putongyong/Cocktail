@@ -6,10 +6,15 @@ import {
 } from "react-router-dom";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
-import About from "./routes/about";
-import Contact from "./routes/contact";
-import Products from "./routes/products";
-import Workshop from "./routes/workshop";
+import Cocktails from "./routes/Cocktails";
+import Aperitifs from "./routes/Aperitifs";
+import Desserts from "./routes/Desserts";
+import Glaces from "./routes/Glaces";
+import Ambiances from "./routes/Ambiance";
+import Ateliers from "./routes/Ateliers";
+import Apropos from "./routes/Apropos";
+import Contact from "./routes/Contact";
+
 
 const router = createBrowserRouter([
   {
@@ -18,20 +23,36 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "about",
-    element: <About />,
+    path: "cocktails",
+    element: <Cocktails />,
+  },
+  {
+    path: "aperitifs",
+    element: <Aperitifs />,
+  },
+  {
+    path: "desserts",
+    element: <Desserts />,
+  },
+  {
+    path: "glaces",
+    element: <Glaces />,
+  },
+  {
+    path: "ambiances",
+    element: <Ambiances />,
+  },
+  {
+    path: "ateliers",
+    element: <Ateliers />,
+  },
+  {
+    path: "apropos",
+    element: <Apropos />,
   },
   {
     path: "contact",
     element: <Contact />,
-  },
-  {
-    path: "products",
-    element: <Products />,
-  },
-  {
-    path: "workshop",
-    element: <Workshop />,
   },
 ]);
 
