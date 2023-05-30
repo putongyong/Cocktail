@@ -17,7 +17,9 @@ export default function Root() {
 			<ProductList/>
 		</main>
 		<Footer/>
-	</div>
+		</div>
+		
+	
       </>
     );
   }
