@@ -13,7 +13,7 @@ import Glaces from "./routes/Glaces";
 import Ambiances from "./routes/Ambiance";
 import Ateliers from "./routes/Ateliers";
 import Apropos from "./routes/Apropos";
-import Contact from "./routes/Contact";
+import Contact from "./routes/contact";
 
 
 const router = createBrowserRouter([

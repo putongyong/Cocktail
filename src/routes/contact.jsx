@@ -2,7 +2,6 @@ import Footer from "./components/footer"
 import Navbar from "./components/navbar"
 import Questions from "./components/questions"
 
-
 export default function Contact() {
     return (
       <>
