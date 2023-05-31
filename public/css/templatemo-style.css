@@ -1040,3 +1040,38 @@ address {
   font-size:13px;
   margin-bottom:0;
 }
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust this to control the height of the video background */
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  padding-bottom: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.text-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  font-size: 1.5rem;
+}

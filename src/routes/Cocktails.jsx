@@ -1,13 +1,16 @@
-import Noodles from "./components/noodles";
-import Salad from "./components/salad";
-import Pizza from "./components/pizza";
+import AvecAlcool from "./components/Cocktail/avec_alcool";
+import SansAlcool from "./components/Cocktail/sans_alcool";
+import Ete from "./components/Cocktail/ete";
+import Sante from "./components/Cocktail/cocktail_sante";
+import Exotique from "./components/Cocktail/exotique";
+import Noel from "./components/Cocktail/noel";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import { useState } from "react"
 
 
 export default function Cocktails(){
-    const [activeTab, setActiveTab] = useState('pizza');
+    const [activeTab, setActiveTab] = useState('avecalcool');
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
@@ -15,12 +18,18 @@ export default function Cocktails(){
 
     const renderContent = () => {
         switch (activeTab) {
-            case 'pizza':
-                return <Pizza />;
-            case 'salad':
-                return <Salad />;
-            case 'noodles':
-                return <Noodles />;
+            case 'avecalcool':
+                return <AvecAlcool />;
+            case 'sansalcool':
+                return <SansAlcool />;
+            case 'ete':
+                return <Ete />;
+			case 'sante':
+                return <Sante />;
+            case 'noel':
+                return <Noel />;
+            case 'exotique':
+                return <Exotique />;
             default:
                 return null;
         }
@@ -40,18 +49,33 @@ export default function Cocktails(){
 						<nav>
 							<ul>
 								<li className="tm-paging-item">
-								<a className={`tm-paging-link ${activeTab === 'pizza' ? 'active' : ''}`} onClick={() => handleTabChange('pizza')}>
-								Cocktail 1
+								<a className={`tm-paging-link ${activeTab === 'avecalcool' ? 'active' : ''}`} onClick={() => handleTabChange('avecalcool')}>
+								Avec Alcool
 								</a>
 								</li>
 								<li className="tm-paging-item">
-								<a className={`tm-paging-link ${activeTab === 'salad' ? 'active' : ''}`} onClick={() => handleTabChange('salad')}>
-								Cocktail 2
+								<a className={`tm-paging-link ${activeTab === 'sansalcool' ? 'active' : ''}`} onClick={() => handleTabChange('sansalcool')}>
+								Sans Alcool
 								</a>
 								</li>
 								<li className="tm-paging-item">
-								<a className={`tm-paging-link ${activeTab === 'noodles' ? 'active' : ''}`} onClick={() => handleTabChange('noodles')}>
-								Cocktail 3
+								<a className={`tm-paging-link ${activeTab === 'ete' ? 'active' : ''}`} onClick={() => handleTabChange('ete')}>
+								Été
+								</a>
+								</li>
+								<li className="tm-paging-item">
+								<a className={`tm-paging-link ${activeTab === 'noel' ? 'active' : ''}`} onClick={() => handleTabChange('noel')}>
+								Noël
+								</a>
+								</li>
+								<li className="tm-paging-item">
+								<a className={`tm-paging-link ${activeTab === 'sante' ? 'active' : ''}`} onClick={() => handleTabChange('sante')}>
+								Santé
+								</a>
+								</li>
+								<li className="tm-paging-item">
+								<a className={`tm-paging-link ${activeTab === 'exotique' ? 'active' : ''}`} onClick={() => handleTabChange('exotique')}>
+								Exotique
 								</a>
 								</li>
 							</ul>

@@ -2,6 +2,7 @@ import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import ProductList from "./components/productlist";
 import Intro from "./components/intro";
+import Info from "./components/info";
 
 export default function Root() {
     return (
@@ -15,6 +16,7 @@ export default function Root() {
 			</header>
 			<Intro />
 			<ProductList/>
+			<Info/>
 		</main>
 		<Footer/>
 		</div>

@@ -1,22 +1,15 @@
 export default function Intro(){
     return (
         <>
-            <div class="tm-section tm-container-inner-3">
-				<div class="row">
-					<div class="col-md-6">
-						<figure class="tm-description-figure">
-							<img src="img/img-01.jpg" alt="Image" class="img-fluid" />
-						</figure>
-					</div>
-					<div class="col-md-6">
-						<div class="tm-description-box"> 
-							<h4 class="tm-gallery-title">Maecenas nulla neque</h4>
-							<p class="tm-mb-45">Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to <a rel="nofollow" href="https://templatemo.com/contact">talk to us</a> for additional permissions about our templates. Thank you.</p>
-							<a href="about.html" class="tm-btn tm-btn-default tm-right">Read More</a>
-						</div>
-					</div>
+            <div className="video-background">
+				<video autoPlay loop muted>
+					<source src="/img/video/pexels-cottonbro-studio-3188951-1920x1080-25fps.mp4" type="video/mp4" />
+				</video>
+				<div className="text-container">
+					<h1>Welcome to my website!</h1>
+					<p>Some additional text here...</p>
 				</div>
 			</div>
-        </>
+		</>
     )
 }
