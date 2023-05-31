@@ -70,7 +70,6 @@ export default function Contact() {
 			</div>
 			<Questions/>
 		</main>
-
 		<Footer/>
 	</div>
       </>
