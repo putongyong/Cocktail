@@ -31,17 +31,17 @@ export default function ProductList(){
                     <ul>
                         <li className="tm-paging-item">
                         <a className={`tm-paging-link ${activeTab === 'pizza' ? 'active' : ''}`} onClick={() => handleTabChange('pizza')}>
-                            Pizza
+                            Cocktail
                         </a>
                         </li>
                         <li className="tm-paging-item">
                         <a className={`tm-paging-link ${activeTab === 'salad' ? 'active' : ''}`} onClick={() => handleTabChange('salad')}>
-                            Salad
+                            Apéritif
                         </a>
                         </li>
                         <li className="tm-paging-item">
                         <a className={`tm-paging-link ${activeTab === 'noodles' ? 'active' : ''}`} onClick={() => handleTabChange('noodles')}>
-                            Noodles
+                            Dessert
                         </a>
                         </li>
                     </ul>
